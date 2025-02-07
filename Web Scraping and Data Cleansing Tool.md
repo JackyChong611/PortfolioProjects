@@ -34,6 +34,25 @@ import threading
 ```
 ## 🚗 Initializing WebDriver
 ```
+# List of cuisines and district IDs
+cuisines = [
+    "粵菜-廣東", "潮州菜", "客家菜", "川菜-四川", "滬菜-上海", "京菜-官府菜", "京川滬", "台灣菜", "順德菜",
+    "滇菜-雲南", "湘菜-湖南", "桂菜-廣西", "東北菜", "鲁菜-山東", "新疆菜", "農家菜", "閩菜-福建", "江浙菜",
+    "黔菜-貴州", "陝菜-陝西", "蒙古菜", "晉菜-山西", "鄂菜-湖北", "淮揚菜", "日本菜", "韓國菜", "泰國菜",
+    "越南菜", "印尼菜", "新加坡菜", "馬來西亞菜", "菲律賓菜", "緬甸菜", "印度菜", "尼泊爾菜", "斯里蘭卡菜",
+    "中東菜", "地中海菜", "土耳其菜", "黎巴嫩菜", "摩洛哥", "埃及菜", "非洲菜", "猶太菜", "希臘菜", "意大利菜",
+    "法國菜", "美國菜", "英國菜", "西班牙菜", "德國菜", "比利時菜", "澳洲菜", "葡國菜", "瑞士菜", "愛爾蘭菜",
+    "東歐菜", "荷蘭菜", "奧地利菜", "西式", "墨西哥菜", "古巴菜", "阿根廷菜", "秘魯菜", "巴西菜", "港式",
+    "中菜", "粵菜", "亞洲菜", "西餐", "中東-地中海菜", "中南美菜", "多國菜"
+]
+
+district_ids = [
+    1008, -35243, -35244, -35242, 1001, -9006, 1003, -9007, 1011, 1022, 1019, 1026, 1004, 1023, 1014, 1009, 1018, 1024,
+    1013, 1005, 1017, 1025, 1027, 1012, 1020, 1021, 1010, 1002, -9151, 1007, 1015, 1016, 2008, 2010, 2028, 2011, 2029,
+    2019, 2026, 2006, 2003, 2022, 2015, 2004, 2013, 2005, 2001, 2016, 2031, 2007, 2009, 2002, 2030, 2027, 2020, 2032,
+    2021, 2024, 2025, 2012, 3019, 3018, 3015, 3005, 3003, 3002, 3007, 3012, 3009, 3020, -35260, -35259, -35276, 3004,
+    3008, 3001, 3014, 3006, 3013, 3017, 3010, 3022, 3021, 3011, 3016, 4009, 4002, 4004, 4001, 4006, 4005, 4010, 4003, 4011
+]
 thread_local = threading.local()
 
 def get_driver():
@@ -159,4 +178,33 @@ def scrape_openrice(cuisine, district_id, max_retries=2, delay=5):
             else:
                 print("Max retries reached. Moving to next URL.")
                 return []
+```
+## 💾 Saving Data to Excel
+```
+def main():
+    all_data = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        future_to_url = {executor.submit(scrape_openrice, cuisine, district_id): (cuisine, district_id)
+                         for cuisine in cuisines for district_id in district_ids}
+        for future in concurrent.futures.as_completed(future_to_url):
+            cuisine, district_id = future_to_url[future]
+            try:
+                data = future.result()
+                if data:
+                    all_data.extend(data)
+            except Exception as exc:
+                print(f'{cuisine} {district_id} generated an exception: {exc}')
+
+    # Save to Excel
+    df = pd.DataFrame(all_data)
+    df.to_excel('openrice_restaurants_1.xlsx', index=False, engine='openpyxl')
+    print("Data saved to openrice_restaurants_1.xlsx")
+
+    # Close all drivers
+    for thread in threading.enumerate():
+        if hasattr(thread, "driver"):
+            thread.driver.quit()
+
+if __name__ == "__main__":
+    main()
 ```
