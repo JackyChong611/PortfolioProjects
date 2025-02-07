@@ -11,13 +11,13 @@ Before running the script, install the required dependencies:
 pip install requests beautifulsoup4 selenium pandas openpyxl
 
 ---
-### ***📌 Main Section***
+## **📌 Main Section**
 ✅ Automated data extraction using Python, BeautifulSoup, and Selenium.
 ✅ Data cleaning and preprocessing using Pandas.
 ✅ Handles over 50+ cuisine types & multiple district IDs for comprehensive data collection.
 ✅ Multi-threaded execution to optimize web scraping performance.
 ✅ Data export to Excel (.xlsx) format.
-
+---
 ## **Main Section**
 
 ### **📝 Web Scraping Code**
