@@ -29,3 +29,18 @@ from urllib.parse import quote
 import concurrent.futures
 import threading
 ```
+## 🚗 Initializing WebDriver
+```
+thread_local = threading.local()
+
+def get_driver():
+    """Initialize a Chrome WebDriver instance with proper settings."""
+    if not hasattr(thread_local, "driver"):
+        options = Options()
+        options.add_argument('--headless')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)')
+        thread_local.driver = webdriver.Chrome(options=options)
+    return thread_local.driver
+```
