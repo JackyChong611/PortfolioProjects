@@ -12,6 +12,7 @@ pip install requests beautifulsoup4 selenium pandas openpyxl
 
 ---
 ## **📌 Main Section**
+```bash
 ✅ Automated data extraction using Python, BeautifulSoup, and Selenium.
 ✅ Data cleaning and preprocessing using Pandas.
 ✅ Handles over 50+ cuisine types & multiple district IDs for comprehensive data collection.
