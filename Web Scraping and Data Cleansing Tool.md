@@ -11,3 +11,19 @@ pip install requests beautifulsoup4 selenium pandas openpyxl
 ✅ Handles over 50+ cuisine types & multiple district IDs for comprehensive data collection.
 ✅ Multi-threaded execution to optimize web scraping performance.
 ✅ Exports cleaned data to Excel (.xlsx) format.
+## 📌 Main Section
+### 📝 Web Scraping Code
+import requests
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import WebDriverException, TimeoutException, NoSuchElementException
+import time
+import pandas as pd
+import re
+from urllib.parse import quote
+import concurrent.futures
+import threading
