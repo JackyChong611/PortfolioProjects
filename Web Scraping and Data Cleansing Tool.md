@@ -13,6 +13,7 @@ pip install requests beautifulsoup4 selenium pandas openpyxl
 ✅ Exports cleaned data to Excel (.xlsx) format.
 ## 📌 Main Section
 ### 📝 Web Scraping Code
+```
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -27,3 +28,4 @@ import re
 from urllib.parse import quote
 import concurrent.futures
 import threading
+```
