@@ -25,6 +25,7 @@ from urllib.parse import quote
 import concurrent.futures
 import threading
 
+## **📝 Web Scraping Code**
 # Initialize Selenium WebDriver
 def get_driver():
     options = Options()
