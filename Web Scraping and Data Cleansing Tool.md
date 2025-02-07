@@ -1,3 +1,7 @@
+# Web Scraping and Data Cleansing Tool
+
+This project is a Python-based web scraping and data cleansing tool designed to extract and clean data from licensed liquor premises and suppliers in Hong Kong.
+## **Code**
 !pip install requests beautifulsoup4 selenium pandas
 import requests
 from bs4 import BeautifulSoup
