@@ -10,6 +10,8 @@ Before running the script, install the required dependencies:
 ```bash
 pip install requests beautifulsoup4 selenium pandas openpyxl
 
+---
+
 ## **Main Section**
 
 ### **📝 Web Scraping Code**
