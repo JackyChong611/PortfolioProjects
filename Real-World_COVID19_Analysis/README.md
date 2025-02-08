@@ -8,5 +8,5 @@
   - Despite occasional fluctuations, rate ratios confirmed overdispersion effects.  
 
 ## Files  
-- [Analysis Code](./Real-World_COVID19_Analysis/analysis.R)  
+- [Analysis Code]([./Real-World_COVID19_Analysis/analysis.R](https://github.com/JackyChong611/PortfolioProjects/blob/33640ee4743fa6458854f7157aeb6ffce44e914c/Real-World_COVID19_Analysis/Data%20Analytics%20Project%20Supplementary%20Materials-20250208T165233Z-001.zip))  
 - [Full Report](./Real-World_COVID19_Analysis/Report.pdf)  
