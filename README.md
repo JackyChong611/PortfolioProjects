@@ -40,9 +40,9 @@ This project investigates the relationship between COVID-19 vaccination and all-
 
 📄 Read more in the [detailed documentation](./Real-World_COVID19_Analysis/README.md).
 
-## 🕸️ Web Scraping and Data Cleansing Tool
+## Web Scraping and Data Cleansing Tool
 
-This project is a **Python-based web scraping pipeline** designed to extract, clean, and export structured data from [OpenRice Hong Kong](https://www.openrice.com/zh/hongkong/home). It focuses on licensed liquor premises and diverse restaurant listings across districts and cuisines.
+This project is a **Python-based web scraping pipeline** designed to extract, clean, and export structured data from OpenRice Hong Kong. It focuses on licensed liquor premises and diverse restaurant listings across districts and cuisines.
 
 The tool is optimized for performance using **multi-threading**, **Selenium**, and **BeautifulSoup**, with outputs saved in `.xlsx` format for further analysis or integration.
 
