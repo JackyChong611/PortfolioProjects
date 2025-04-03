@@ -46,9 +46,7 @@ This project is a **Python-based web scraping pipeline** designed to extract, cl
 
 The tool is optimized for performance using **multi-threading**, **Selenium**, and **BeautifulSoup**, with outputs saved in `.xlsx` format for further analysis or integration.
 
----
-
-### 📌 Features
+📌 Features
 
 - Automated scraping with `requests`, `Selenium`, and `BeautifulSoup`
 - Dynamic handling of 50+ cuisine types and 100+ district IDs
