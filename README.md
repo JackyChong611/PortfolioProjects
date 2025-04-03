@@ -48,7 +48,7 @@ The tool is optimized for performance using **multi-threading**, **Selenium**, a
 
 ---
 
-## 📌 Features
+### 📌 Features
 
 - Automated scraping with `requests`, `Selenium`, and `BeautifulSoup`
 - Dynamic handling of 50+ cuisine types and 100+ district IDs
@@ -57,11 +57,4 @@ The tool is optimized for performance using **multi-threading**, **Selenium**, a
 - Cleans and structures data with `pandas`
 - Exports to Excel with `openpyxl`
 
----
-
-## ⚙️ Installation
-
-Install the required dependencies:
-
-```bash
-pip install requests beautifulsoup4 selenium pandas openpyxl
+-**Path to code**: [`/Web Scraping and Data Cleansing Tool`](./Twitter_Sentiment_Analysis/Twitter%20Sentiment%20Analysis%20with%20Natural%20Language%20Processing.ipynb)
