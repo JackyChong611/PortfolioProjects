@@ -17,5 +17,6 @@ This project explores sentiment classification on SemEval 2017 tweets, comparing
   - Stopword retention slightly improved SVM’s performance, suggesting syntactic cues contribute to sentiment signals.
   - Contextual embeddings (BERT, BERTweet) offered clear improvements in class-wise F1 scores, particularly on nuanced or informal text.
 
+![Model Performance Comparison](./Twitter%20Sentiment%20Analysis/results/model_comparison_summary.png)
 Read more in the [detailed documentation](./Twitter_Sentiment_Analysis/README.md).
 
