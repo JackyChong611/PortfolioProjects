@@ -18,3 +18,4 @@ This project explores sentiment classification on SemEval 2017 tweets, comparing
   - Contextual embeddings (BERT, BERTweet) offered clear improvements in class-wise F1 scores, particularly on nuanced or informal text.
 
 Read more in the [detailed documentation](./Twitter_Sentiment_Analysis/README.md).
+
