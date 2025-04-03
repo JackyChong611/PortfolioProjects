@@ -57,4 +57,4 @@ The tool is optimized for performance using **multi-threading**, **Selenium**, a
 - Cleans and structures data with `pandas`
 - Exports to Excel with `openpyxl`
 
--**Path to code**: [`/Web Scraping and Data Cleansing Tool`](./Twitter_Sentiment_Analysis/Twitter%20Sentiment%20Analysis%20with%20Natural%20Language%20Processing.ipynb)
+-**Path to code**: [`/Web Scraping and Data Cleansing Tool`](./Web Scraping and Data Cleansing Tool.md)
