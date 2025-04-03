@@ -1,28 +1,36 @@
 # PortfolioProjects
-💬 Twitter Sentiment Analysis with NLP
-Project Goal:
-Build and evaluate sentiment classifiers on Twitter data using SemEval 2017 Task 4A, classifying tweets as positive, neutral, or negative. This project compares traditional machine learning models with deep learning architectures using both static and contextual word embeddings.
+## 🧠 Twitter Sentiment Analysis with Natural Language Processing
+This project implements and compares six sentiment classification models on the SemEval 2017 Task 4A dataset, which requires categorizing tweets into positive, neutral, or negative sentiments. The objective is to explore the performance trade-offs between traditional machine learning algorithms and modern deep learning architectures in a real-world social media context.
 
-Techniques Used:
+🔍 Key Highlights
+Dataset: SemEval 2017 Task 4A – annotated Twitter data
 
-Preprocessing Twitter-specific text (mentions, hashtags, URLs)
+Preprocessing: Twitter-specific text cleaning (e.g., URL removal, hashtag parsing, mention normalization)
 
-Text representation using TF-IDF, GloVe, BERT, and BERTweet
+Feature Engineering:
 
-Modeling with:
+TF-IDF (unigrams and bigrams)
 
-SVM + GloVe
+Pre-trained GloVe embeddings
 
-GaussianNB + GloVe
+Contextual embeddings from BERT and BERTweet
 
-MultinomialNB + TF-IDF
+Models Implemented:
 
-LSTM + GloVe
+Support Vector Machine (SVM) with GloVe
 
-LSTM + BERT
+Gaussian Naive Bayes with GloVe
 
-LSTM + BERTweet
+Multinomial Naive Bayes with TF-IDF
 
-Evaluation using F1 Score, confusion matrices, and training time analysis
+Bidirectional LSTM with GloVe
 
-Experiments on the impact of stopword removal
+Bidirectional LSTM with BERT
+
+Bidirectional LSTM with BERTweet (Twitter-optimized RoBERTa)
+
+Evaluation Metrics: Accuracy, macro-averaged F1 score, training time, and class-wise performance
+
+Experiments: Analysis of stopword removal effects on classifier performance
+
+This project demonstrates how domain-specific preprocessing, word representation, and model selection significantly affect sentiment analysis accuracy, especially when dealing with informal and noisy social media data.
