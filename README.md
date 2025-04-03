@@ -21,7 +21,7 @@ This project explores sentiment classification on SemEval 2017 tweets, comparing
 
 ![Model Performance Comparison](./Twitter_Sentiment_Analysis/model_comparison_summary.png)
 
-Read more in the [detailed documentation](./Twitter_Sentiment_Analysis/README.md).
+📄 Read more in the [detailed documentation](./Twitter_Sentiment_Analysis/README.md).
 
 ## COVID-19 Vaccination & All-Cause Mortality Analysis
 **Overview**
