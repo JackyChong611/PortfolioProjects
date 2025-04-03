@@ -4,8 +4,9 @@ Welcome to my Data Science and NLP portfolio! Below is an overview of each proje
 
 ## Table of Contents
 1. [Twitter Sentiment Analysis with NLP](#twitter-sentiment-analysis-with-nlp)
-2. [COVID-19 Dashboard & Analysis](#COVID-19%20Vaccination%20&%20All-Cause%20Mortality%20Analysis)
-3. [Scraping & Data Wrangling](#scraping--data-wrangling)
+2. [COVID-19 Vaccination & All-Cause Mortality Analysis](#covid-19-vaccination--all-cause-mortality-analysis)
+3. [Web Scraping & Data Cleansing Tool](#web-scraping--data-cleansing-tool)
+
 
 ## Twitter Sentiment Analysis with NLP
 **Overview**:
