@@ -1,22 +1,15 @@
 # PortfolioProjects
-## 🧠 Twitter Sentiment Analysis with Natural Language Processing
-This project implements and compares six sentiment classification models on the SemEval 2017 Task 4A dataset, which requires categorizing tweets into positive, neutral, or negative sentiments. The objective is to explore the performance trade-offs between traditional machine learning algorithms and modern deep learning architectures in a real-world social media context.
+## Twitter Sentiment Analysis with NLP
+This project addresses SemEval 2017 Task 4A to classify tweets into positive, neutral, or negative sentiment. It demonstrates how different machine learning and deep learning models perform when faced with real-world, informal Twitter data.
 
-🔍 Key Highlights
-Dataset: SemEval 2017 Task 4A – annotated Twitter data
+### Overview
+Goal: Explore the impact of feature representations (TF-IDF vs. embeddings) and model choices (traditional vs. deep learning) on sentiment classification performance.
 
-Preprocessing: Twitter-specific text cleaning (e.g., URL removal, hashtag parsing, mention normalization)
+Dataset: SemEval 2017 Task 4A, comprising annotated tweets labeled by sentiment.
 
-Feature Engineering:
+Key Techniques: Twitter-specific text cleaning (mentions, hashtags, URLs), dimensionality reduction, handling noisy labels, and embedding-based features.
 
-TF-IDF (unigrams and bigrams)
-
-Pre-trained GloVe embeddings
-
-Contextual embeddings from BERT and BERTweet
-
-Models Implemented:
-
+Models Implemented
 Support Vector Machine (SVM) with GloVe
 
 Gaussian Naive Bayes with GloVe
@@ -27,10 +20,13 @@ Bidirectional LSTM with GloVe
 
 Bidirectional LSTM with BERT
 
-Bidirectional LSTM with BERTweet (Twitter-optimized RoBERTa)
+Bidirectional LSTM with BERTweet
 
-Evaluation Metrics: Accuracy, macro-averaged F1 score, training time, and class-wise performance
+Note: We also evaluate the impact of stopword removal on classifier performance.
 
-Experiments: Analysis of stopword removal effects on classifier performance
+Evaluation
+Metrics: Accuracy, macro-F1, class-wise F1, and training time.
 
-This project demonstrates how domain-specific preprocessing, word representation, and model selection significantly affect sentiment analysis accuracy, especially when dealing with informal and noisy social media data.
+Results: Advanced models (LSTM + BERT/BERTweet) achieve the highest accuracy and F1 scores. Classical methods (Naive Bayes, SVM) train faster and may suffice for lightweight scenarios.
+
+Key Finding: Retaining stopwords slightly improves certain classifier performances, showing that function words can carry subtle cues for sentiment.
