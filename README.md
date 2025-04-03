@@ -23,7 +23,7 @@ This project explores sentiment classification on SemEval 2017 tweets, comparing
 
 Read more in the [detailed documentation](./Twitter_Sentiment_Analysis/README.md).
 
-## 🏥 COVID-19 Vaccination & All-Cause Mortality Analysis
+## 🏥 COVID-19 Vaccination And All-Cause Mortality Analysis
 **Overview**
 This project investigates the relationship between COVID-19 vaccination and all-cause mortality in England using publicly available data from the **UK Office for National Statistics (ONS). While clinical trials confirm vaccine efficacy in reducing COVID-specific deaths, this study focuses on broader mortality patterns across age groups from April 2021 to May 2023.
 
