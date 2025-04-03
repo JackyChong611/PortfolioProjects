@@ -22,10 +22,9 @@ This project explores sentiment classification on SemEval 2017 tweets, comparing
 Read more in the [detailed documentation](./Twitter_Sentiment_Analysis/README.md).
 
 ## 🏥 COVID-19 Vaccination & All-Cause Mortality Analysis
-*(Short Overview)*  
+**Overview**
 This project investigates the relationship between COVID-19 vaccination and all-cause mortality in England using publicly available data from the **UK Office for National Statistics (ONS). While clinical trials confirm vaccine efficacy in reducing COVID-specific deaths, this study focuses on broader mortality patterns across age groups from April 2021 to May 2023.
 
-- **Path to code**: [`/Real-World_COVID19_Analysis`](./Real-World_COVID19_Analysis/)
 - **Insights**:
   - Vaccination is consistently associated with lower all-cause mortality, especially after the third and fourth doses.
   - Elevated risk among early first-dose recipients likely reflects indication bias (high-risk populations prioritized).
@@ -37,4 +36,4 @@ This project investigates the relationship between COVID-19 vaccination and all-
   - Poisson & Negative Binomial regression (to account for overdispersion)
   - Data cleaning & statistical visualization using R and ggplot2
 
-📄 Read the full [project report](./Real-World_COVID19_Analysis/overview.md) for detailed findings and plots.
+📄 Read more in the [detailed documentation](./Real-World_COVID19_Analysis/README.md).
