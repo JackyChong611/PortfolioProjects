@@ -50,12 +50,12 @@ The tool is optimized for performance using **multi-threading**, **Selenium**, a
 
 ## 📌 Features
 
-- ✅ Automated scraping with `requests`, `Selenium`, and `BeautifulSoup`
-- ✅ Dynamic handling of 50+ cuisine types and 100+ district IDs
-- ✅ Skips closed/relocated restaurants and handles HTML irregularities
-- ✅ Multi-threaded scraping using `concurrent.futures` for speed
-- ✅ Cleans and structures data with `pandas`
-- ✅ Exports to Excel with `openpyxl`
+- Automated scraping with `requests`, `Selenium`, and `BeautifulSoup`
+- Dynamic handling of 50+ cuisine types and 100+ district IDs
+- Skips closed/relocated restaurants and handles HTML irregularities
+- Multi-threaded scraping using `concurrent.futures` for speed
+- Cleans and structures data with `pandas`
+- Exports to Excel with `openpyxl`
 
 ---
 
