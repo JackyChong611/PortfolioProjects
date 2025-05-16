@@ -37,8 +37,8 @@ Using party identification as a proxy for political leaning, it compares **Labou
 
 ---
 
-## 📊 Key Results
-
+## 📊 Results
+![NHS Satisfaction by Party](nhs_satisfaction_by_party.png)
 <table>
   <tr>
     <td align="center"><strong>NHS Satisfaction by Party (1983–2023)</strong></td>
