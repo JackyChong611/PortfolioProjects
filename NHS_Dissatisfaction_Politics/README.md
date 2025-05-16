@@ -41,7 +41,8 @@ Using party identification as a proxy for political leaning, it compares **Labou
 
 | NHS Satisfaction by Party (1983–2023) | Logistic Regression Coefficients |
 |--------------------------------------|----------------------------------|
-| ![NHS Satisfaction by Party](![NHS Satisfaction by Party](NHS_Dissatisfaction_Politics/NHS%20Satisfaction%20by%20Party%20Support.png)
+|![NHS Satisfaction by Party](NHS_Dissatisfaction_Politics/nhs_satisfaction_by_party.png)
+
  |
 
 > *Note: Figures automatically scale if placed in a `figs/` subfolder.*
