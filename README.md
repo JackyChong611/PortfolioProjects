@@ -23,6 +23,23 @@ This project explores sentiment classification on SemEval 2017 tweets, comparing
 
 📄 Read more in the [detailed documentation](./Twitter_Sentiment_Analysis/README.md).
 
+## NHS Dissatisfaction & Political Leanings Analysis
+**Overview**  
+Using British Social Attitudes (BSA) surveys **2015–2019 & 2021–2023**, this project tests whether the reasons people give for feeling dissatisfied with the NHS differ by political leaning (Labour, Conservative, Unaffiliated) after controlling for age, sex, ethnicity, education, employment and the post-COVID shock.
+
+- **Insights**  
+  - **Labour supporters** blamed systemic issues (under-funding, staff shortages, disliked reforms).  
+  - **Conservative supporters** highlighted operational inefficiency and “money wasted.”  
+  - **Unaffiliated respondents** focused on practical concerns such as long waiting times.  
+  - Age 65 + and employment status independently increased dissatisfaction; COVID-19 years produced a universal spike across all groups.
+
+- **Techniques Used**  
+  - Data cleaning, reshaping & visualisation in **R** (tidyverse, ggplot2).  
+  - Phi & Cramér’s V to screen bivariate associations.  
+  - **Stepwise logistic regression** (year fixed effects → age interactions → full demographic controls) on overall and nine reason-specific outcomes.
+
+📄 Read more in the [detailed documentation](./NHS_Dissatisfaction_Politics/README.md).
+
 ## COVID-19 Vaccination & All-Cause Mortality Analysis
 **Overview**
 This project investigates the relationship between COVID-19 vaccination and all-cause mortality in England using publicly available data from the **UK Office for National Statistics (ONS). While clinical trials confirm vaccine efficacy in reducing COVID-specific deaths, this study focuses on broader mortality patterns across age groups from April 2021 to May 2023.
