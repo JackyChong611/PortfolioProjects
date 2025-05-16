@@ -45,33 +45,12 @@ Using party identification as a proxy for political leaning, it compares **Labou
 
 > *Note: Figures automatically scale if placed in a `figs/` subfolder.*
 
----
-
-## 📁 Files
-
-| File/Folder | Description |
-|-------------|-------------|
-| `clean_bsa_data.R` | Preprocessing script for standardizing BSA survey years |
-| `logit_models.R` | Stepwise logistic regression modeling |
-| `figs/` | Project figures (plots, graphs, export-ready visuals) |
-| `README.md` | Project overview |
-
----
 
 ## 📌 Citation
 
 Data Source:  
 > British Social Attitudes Survey 2015–2023, NatCen Social Research.
 
----
-
-## ✅ To Do
-
-- [ ] Add models for pre-2010 comparison if available  
-- [ ] Refactor output tables to Markdown/LaTeX  
-- [ ] Explore robustness to ideology scale (vs. party ID)
-
----
 
 *Created by Jacky Chong (2025)*  
 [Back to Portfolio ➜](https://github.com/JackyChong611/PortfolioProjects)
