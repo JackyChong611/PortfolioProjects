@@ -47,7 +47,7 @@ Using party identification as a proxy for political leaning, it compares **Labou
 
 ### Table 1: Logistic Regression – Overall NHS Dissatisfaction
 
-<img src="NHS_Dissatisfaction_Politics/Logistic%20Regression%20with%20NHS%20Dissatisfaction.png" 
+<img src="Logistic Regression with NHS Dissatisfaction.png" 
      alt="Logistic Regression with NHS Dissatisfaction"
      width="800">
 
