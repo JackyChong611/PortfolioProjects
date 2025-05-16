@@ -37,34 +37,37 @@ Using party identification as a proxy for political leaning, it compares **Labou
 
 ---
 
-## 📊 Sample Visuals
-
-| NHS Satisfaction by Party (1983–2023) | Logistic Regression Coefficients |
-|--------------------------------------|----------------------------------|
-![NHS Satisfaction by Party](nhs_satisfaction_by_party.png) | (Logistic Regression with NHS Dissatisfaction.png) |
-
 ## 📊 Key Results
 
-### Table 1: Logistic Regression – Overall NHS Dissatisfaction
+<table>
+  <tr>
+    <td align="center"><strong>NHS Satisfaction by Party (1983–2023)</strong></td>
+    <td align="center"><strong>Logistic Regression Coefficients</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <img src="Logistic Regression with NHS Dissatisfaction.png"
+           alt="NHS Satisfaction by Party"
+           width="600" height="600">
+      <p align="left" style="font-size: 12px;">
+        This figure shows 40 years of NHS satisfaction data from the British Social Attitudes survey,
+        grouped by party identification (Labour vs Conservative). Satisfaction fluctuated with the party
+        in power, with notably lower satisfaction under Conservative-led governments after 2010.
+      </p>
+    </td>
+    <td>
+      <img src="Multivariate Logistic Regression Results for NHS Dissatisfaction Reasons by Political Affiliation and Demographics .png"
+           alt="Logistic Regression Coefficients"
+           width="600" height="600">
+      <p align="left" style="font-size: 12px;">
+        This table presents multivariate logistic regression results for nine specific reasons for NHS dissatisfaction.
+        Labour supporters emphasized systemic issues (e.g., funding, staffing), while Conservative supporters were more
+        likely to cite operational inefficiency. Age and employment also emerged as consistent predictors.
+      </p>
+    </td>
+  </tr>
+</table>
 
-<img src="Logistic Regression with NHS Dissatisfaction.png" 
-     alt="Logistic Regression with NHS Dissatisfaction"
-     width="800">
-
-This table shows four stepwise models evaluating the effect of political leaning, age, employment, and other demographic factors on overall NHS dissatisfaction. Model 3 includes full controls and interactions.
-
----
-
-### Table 2: Logistic Regression – NHS Dissatisfaction Reasons (WhyDis01–09)
-
-<img src="Multivariate Logistic Regression Results for NHS Dissatisfaction Reasons by Political Affiliation and Demographics .png"
-     alt="Multivariate Logistic Regression on NHS Dissatisfaction Reasons"
-     width="900">
-
-This model uses "No Party" as the reference group and estimates dissatisfaction across nine complaint types, showing how each is predicted by political affiliation, age, employment, and other controls.
-
-
-> *Note: Figures automatically scale if placed in a `figs/` subfolder.*
 
 
 ## 📌 Citation
