@@ -57,7 +57,7 @@ This table shows four stepwise models evaluating the effect of political leaning
 
 ### Table 2: Logistic Regression – NHS Dissatisfaction Reasons (WhyDis01–09)
 
-<img src="NHS_Dissatisfaction_Politics/Multivariate%20Logistic%20Regression%20Results%20for%20NHS%20Dissatisfaction%20Reasons%20by%20Political%20Affiliation%20and%20Demographics%20.png"
+<img src="Multivariate Logistic Regression Results for NHS Dissatisfaction Reasons by Political Affiliation and Demographics .png"
      alt="Multivariate Logistic Regression on NHS Dissatisfaction Reasons"
      width="900">
 
